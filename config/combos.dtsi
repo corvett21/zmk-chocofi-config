@@ -25,7 +25,7 @@
 
 //Basics	
 	COMBO(esc, 21 22, &kp ESC, BASE)
-	COMBO(tab, 22 23 &kp TAB, BASE)
+	COMBO(tab, 22 23, &kp TAB, BASE)
 	COMBO(lenter, 21 22 23, &kp ENTER, BASE)
 	COMBO(renter, 26 27 28, &kp ENTER, BASE)
 	COMBO(backspace, 26 27, &kp BSPC, BASE)
