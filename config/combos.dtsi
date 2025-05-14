@@ -39,6 +39,7 @@
 	COMBO(rbracket, 6 16, &kp RBKT, BASE)
 //	COMBO(semi, &kp SEMI, 5 12)
 //Layers
+	COMBO(num-shift, &macro_shift_num, 11 31)
 //	COMBO(num-toggle, &mo NUM, 0 14)
 //	COMBO(num-toggle2, &mo NUM, 0 15)
 //	COMBO(fun-toggle, &mo FUN, 14 17)
