@@ -33,7 +33,7 @@
 	COMBO(bword, 26 28, &kp RC(BSPC), BASE)
 //Punctuation
 //	COMBO(slashq, &kp SLASH, 6 7)
-	COMBO(quotemark, 17 17, &kp SQT, BASE)
+	COMBO(quotemark, 17 19, &kp SQT, BASE)
 //	COMBO(bkslash, &kp BACKSLASH, 6 13)
 	COMBO(lbracket, 3 13, &kp LBKT, BASE)
 	COMBO(rbracket, 6 16, &kp RBKT, BASE)
