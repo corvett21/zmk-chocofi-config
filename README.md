@@ -47,6 +47,6 @@ produce Italian accented letters using the `US-Intl with AltGr Dead Keys`
 
 ## Reference layout
 
-![3x5 layout](./keymap_drawer/dummy.svg)
+![chocofi_keymap](https://github.com/user-attachments/assets/c75ba0b7-ea8b-4361-ba0f-b23c74c49ce1)
 
 (Visualization generated with [@caksoylar/keymap](https://github.com/caksoylar/keymap-drawer))
