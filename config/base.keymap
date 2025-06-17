@@ -107,7 +107,7 @@
             flavor = "balanced";
             tapping-term-ms = <TAP_TERM_MS>;
             quick-tap-ms = <QUICK_TAP_MS>;       // double-tap + hold repeats tap-key
-            require-prior-idle-ms = <100>;       // do not activate HOLD during typing flow
+            require-prior-idle-ms = <20>;       // do not activate HOLD during typing flow
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <LEFT_KEYS RIGHT_KEYS THUMBS>;
             //hold-trigger-on-release;
@@ -120,7 +120,7 @@
             flavor = "balanced";
             tapping-term-ms = <TAP_TERM_MS>;
             quick-tap-ms = <QUICK_TAP_MS>;       // double-tap + hold repeats tap-key
-            require-prior-idle-ms = <100>;       // do not activate HOLD during typing flow
+            require-prior-idle-ms = <20>;       // do not activate HOLD during typing flow
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <LEFT_KEYS RIGHT_KEYS THUMBS>;
             //hold-trigger-on-release;
