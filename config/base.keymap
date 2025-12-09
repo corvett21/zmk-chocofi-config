@@ -394,7 +394,7 @@
         };
 		certbypass: certbypass {
 			compatible = "zmk,behavior-macro";
-			binding-cells = <0>;
+			#binding-cells = <0>;
 			wait-ms = <1>;
 			bindings
 				= <&kp T &kp H &kp I &kp S &kp I &kp S &kp U &kp N &kp S &kp A &kp F &kp E>
