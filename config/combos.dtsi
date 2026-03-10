@@ -24,50 +24,46 @@
 #define COMBO(name, pos, k, l) CONCAT(combo_, name) { key-positions = <pos>; bindings = <k>; layers = <l>; timeout-ms = <COMBO_TAB_MS>; };
 
 //Basics	
-	COMBO(esc, 21 22, &kp ESC, BASE)
-	COMBO(tab, 22 23, &kp TAB, BASE)
-	COMBO(lenter, 21 22 23, &kp ENTER, BASE)
-	COMBO(renter, 26 27 28, &kp ENTER, BASE)
-	COMBO(backspace, 26 27, &kp BSPC, BASE)
-	COMBO(delete, 27 28, &kp DEL, BASE)
-	COMBO(bword, 26 28, &kp RC(BSPC), BASE)
+	COMBO(esc, 21 22, &kp ESC, BASE BASE_B)
+	COMBO(tab, 22 23, &kp TAB, BASE BASE_B)
+	COMBO(lenter, 21 22 23, &kp ENTER, BASE BASE_B)
+	COMBO(renter, 26 27 28, &kp ENTER, BASE BASE_B)
+	COMBO(backspace, 26 27, &kp BSPC, BASE BASE_B)
+	COMBO(delete, 27 28, &kp DEL, BASE BASE_B)
+	COMBO(bword, 26 28, &kp RC(BSPC), BASE BASE_B)
 //Punctuation
-//	COMBO(slashq, &kp SLASH, 6 7)
-	COMBO(quotemark, 17 19, &kp SQT, BASE)
-//	COMBO(bkslash, &kp BACKSLASH, 6 13)
+	COMBO(quotemark, 17 19, &kp SQT, BASE BASE_B)
 	COMBO(lbracket, 3 13, &kp LBKT, BASE)
 	COMBO(rbracket, 6 16, &kp RBKT, BASE)
-//	COMBO(semi, &kp SEMI, 5 12)
-//Layers
+
+//Buggy
+	COMBO(slash, 18 19, &kp SLASH, BASE_B)
+	COMBO(blbracket, 13 23, &kp LBKT, BASE_B)
+	COMBO(brbracket, 16 26, &kp RBKT, BASE_B)
+	COMBO(bcolon, 17 27, &kp SEMI, BASE_B)
+	COMBO(bpipe, 18 28, &kp BSLH, BASE_B)
+	
+//Layers - Commented Out
 //	COMBO(num-shift, &macro_shift_num, 11 31)
 //	COMBO(num-toggle, &mo NUM, 0 14)
-//	COMBO(num-toggle2, &mo NUM, 0 15)
-//	COMBO(fun-toggle, &mo FUN, 14 17)
-//	COMBO(fun-toggle2, &mo FUN, 15 16)
-//	COMBO(xtra-toggle, &mo SYM, 7 15)
-//	COMBO(xtra-toggle2, &mo SYM, 7 16)
+
 //Home Row Combos
-	COMBO(ca-left, 12 13, &kp LC(LALT), BASE)
-	COMBO(cs-left, 11 13, &kp LC(LSHIFT), BASE)
-	COMBO(as-left, 11 12, &kp LS(LALT), BASE)
-	COMBO(ca-right, 16 17, &kp RC(RALT), BASE)
-	COMBO(cs-right, 16 18, &kp RC(RSHIFT), BASE)
-	COMBO(as-right, 17 18, &kp RS(RALT), BASE)
+	COMBO(ca-left, 12 13, &kp LC(LALT), BASE BASE_B)
+	COMBO(cs-left, 11 13, &kp LC(LSHIFT), BASE BASE_B)
+	COMBO(as-left, 11 12, &kp LS(LALT), BASE BASE_B)
+	COMBO(ca-right, 16 17, &kp RC(RALT), BASE BASE_B)
+	COMBO(cs-right, 16 18, &kp RC(RSHIFT), BASE BASE_B)
+	COMBO(as-right, 17 18, &kp RS(RALT), BASE BASE_B)
 
     // left-hand side combos
         // COMBO(quit, 1 2, &kp LG(Q), BASE)
         // COMBO(cltab, 2 3, &kp LG(W), BASE)
-        //COMBO(esc, 21 22, &kp ESCAPE, BASE BASE_WIN)
+        //COMBO(esc, 21 22, &kp ESCAPE, BASE BASE_B)
         //COMBO(copy, 21 22, &kp LG(C), BASE)
         //COMBO(paste, 22 23, &kp LG(V), BASE)
         //COMBO(cut, 21 22 23, &kp LG(X), BASE)
         //COMBO(undo, 10 11, &kp LG(Z), BASE)
         //COMBO(redo, 13 14, &kp LG(LS(Z)), BASE)
-        //COMBO(copy_win, 21 22, &kp LC(C), BASE_WIN)
-        //COMBO(paste_win, 22 23, &kp LC(V), BASE_WIN)
-        //COMBO(cut_win, 21 22 23, &kp LC(X), BASE_WIN)
-        //COMBO(undo_win, 10 11, &kp LC(Z), BASE_WIN)
-        //COMBO(redo_win, 13 14, &kp LC(LS(Z)), BASE_WIN)
     // right-hand side combos
         // COMBO(ret, 16 17 18, &kp RET, BASE)
         // parenthesis combos
