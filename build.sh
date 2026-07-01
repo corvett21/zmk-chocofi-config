@@ -32,7 +32,7 @@ while getopts pb: option; do
     esac
 done
 shift "$((OPTIND - 1))"
-ARG1=${1:-chocofi}
+ARG1=${1:-cradio}
 ARG2=${2:-left}
 
 if [ "$PRISTINE" -eq 1 ]; then
