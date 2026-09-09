@@ -36,4 +36,4 @@ include:
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
   - board: nice_nano_v2
-  sheild: settings_reset
+    sheild: settings_reset
